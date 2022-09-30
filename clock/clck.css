@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(184, 172, 172);
+}
+.clock{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border-radius: 50%;
+    border: solid 12px rgb(176, 59, 78);
+}
+.min{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 4px;
+    width: 45%;
+    background-color: rgb(26, 76, 120);
+    animation: animate 5s linear infinite;
+    transform-origin: left;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform:rotate(360deg)
+    }
+}
+.Hour{
+     position: absolute;
+      top: 50%;
+    left: 50%;
+    height: 5px;
+    width: 35%;
+    transform-origin: left;
+    background-color: rgb(26, 76, 120);
+    animation: animate 100s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform:rotate(360deg)
+    }
+}
